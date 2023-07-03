@@ -74,7 +74,7 @@ app.post('/signup', async(req, res) => {
 });
 
 app.get('/index', (req, res) => {
-  res.sendFile(__dirname + '/login.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 
