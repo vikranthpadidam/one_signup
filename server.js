@@ -5,6 +5,9 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = 3000;
 
+app.use(express.static(__dirname+"/docs"));
+
+
 // Connect to MongoDB
 mongoose.connect('mongodb://127.0.0.1:27017/myapp', {
   useNewUrlParser: true,
@@ -73,13 +76,13 @@ app.post('/signup', async(req, res) => {
 
 });
 
-app.get('/index', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 
 
 // Login endpoint
-app.post('/index', (req, res) => {
+app.post('/', (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
 
