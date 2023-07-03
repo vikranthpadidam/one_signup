@@ -73,13 +73,13 @@ app.post('/signup', async(req, res) => {
 
 });
 
-app.get('/login', (req, res) => {
+app.get('/index', (req, res) => {
   res.sendFile(__dirname + '/login.html');
 });
 
 
 // Login endpoint
-app.post('/login', (req, res) => {
+app.post('/index', (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
 
