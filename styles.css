@@ -1,0 +1,137 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color and font */
+body {
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+}
+
+/* Center content vertically */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Styling for forms */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Additional styles for specific elements */
+.signup-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.success-message {
+  text-align: center;
+  color: green;
+  margin-top: 10px;
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+  margin-top: 10px;
+}
+
+/* Additional custom styles can be added as needed */
+
+/* Stylish looking background colors */
+body.signup-page {
+  background-color: #f7f7fb;
+}
+
+.container.signup-page {
+  background-color: #fff;
+}
+
+.form-container.signup-page {
+  background-color: #ffffff;
+}
+
+.button-container.signup-page {
+  background-color: #ffffff;
+}
+
+.success-message.signup-page {
+  background-color: #d4edda;
+}
+
+.error-message.signup-page {
+  background-color: #f8d7da;
+}
+
+body.login-page {
+  background-color: #fef6ee;
+}
+
+.container.login-page {
+  background-color: #fff;
+}
+
+.form-container.login-page {
+  background-color: #ffffff;
+}
+
+.button-container.login-page {
+  background-color: #ffffff;
+}
+
+.success-message.login-page {
+  background-color: #d8edf2;
+}
+
+.error-message.login-page {
+  background-color: #f7d7e8;
+}
+
+/* Additional custom styles can be added as needed */
