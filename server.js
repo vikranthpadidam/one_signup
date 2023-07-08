@@ -5,8 +5,6 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = 3000;
 
-app.use(express.static(__dirname+"/docs"));
-
 
 // Connect to MongoDB
 mongoose.connect('mongodb://127.0.0.1:27017/myapp', {
@@ -77,7 +75,7 @@ app.post('/signup', async(req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/login.html');
 });
 
 
@@ -112,7 +110,6 @@ app.get('/signup-success', (req, res) => {
 app.get('/home', (req, res) => {
   res.send('Welcome to the home page!');
 });
-
 
 
 // Login failure page
