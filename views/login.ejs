@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Signup Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <style>
+        /* Common styles */
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+        }
+    
+        .container {
+          max-width: 400px;
+          width: 100%;
+          padding: 20px;
+          box-sizing: border-box;
+        }
+    
+        h2 {
+          text-align: center;
+        }
+    
+        button {
+          display: block;
+          width: 100%;
+          margin-bottom: 10px;
+          padding: 10px;
+          font-size: 16px;
+          box-sizing: border-box;
+        }
+    
+        button {
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          cursor: pointer;
+          box-sizing: border-box;
+        }
+    
+        button:hover {
+          background-color: #45a049;
+        }
+    
+        a {
+          color: #3498db;
+          text-decoration: none;
+        }
+    
+        /* Login page */
+        .login-page {
+          background-color: #f2f2f2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+    
+        .login-container {
+          background-color: #fff;
+          border-radius: 5px;
+          max-width: 300px; /* Update this line */
+          width: 100%; /* Add this line */
+          padding: 20px;
+        }
+    
+        /* Signup page */
+        .signup-page {
+          background-color: #f2f2f2;
+        }
+    
+        .signup-container {
+          background-color: #fff;
+          border-radius: 5px;
+        }
+      </style>
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="login-form" action="/login" method="POST">
+       <div class="form-group">
+        <input type="email" class="form-control" name="username" placeholder="email" required>
+      </div>
+      <div class="form-group">
+      <input type="password" class="form-control" name="password" placeholder="Password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="/signup">Signup</a></p>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="card">
+
+      <div class="card-body">
+        <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">
+          <i class="fab fa-google"></i>
+          Sign In with Google
+        </a>
+      </div>
+      <div class="card-body">
+        <a class="btn btn-block btn-social btn-facebook" href="/auth/google" role="button">
+          <i class="fab fa-facebook"></i>
+          Sign In with facebook
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
